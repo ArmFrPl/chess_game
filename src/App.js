@@ -37,7 +37,7 @@ function App() {
   }
   return (
     <div className="App">
-      {['/a980', '/a123'].includes(url) ? (<>
+      {['/team1', '/team2'].includes(url) ? (<>
         <button className="button button1" onClick={newGame}>new Game</button>
         {!showVideo ? <Chessboard
           width={Math.min(width, height) - 80}
@@ -53,11 +53,10 @@ function App() {
             })
           }
         /> : <div>
-          {url === '/a123' && <YoutubeEmbed embedId="VGQrTd_-ZLk"/>}
-          {url === '/a980' && <YoutubeEmbed embedId="XJdolQZedXY"/>}
+          {url === '/team1' && <h1>Գնացեք դեպի ճաշարան</h1>}
         </div>}
-      </>) : <h1>Harry Potter</h1>}
-      {url === '/mmm1' && <YoutubeEmbed embedId="VGQrTd_-ZLk"/>}
+      </>) : <h1>Բարի գալուստ ֆրիզբիի ճամբար</h1>}
+      {url === '/mmm1' && <h2>Գնացեք դեպի ճաշարան</h2>}
       {url === '/mmm2' && <YoutubeEmbed embedId="XJdolQZedXY"/>}
     </div>
   );
